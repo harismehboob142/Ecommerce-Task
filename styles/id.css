@@ -1,0 +1,19 @@
+.singlepage {
+  display: grid;
+  grid-template-columns: 30rem 27rem;
+  grid-template-rows: 35rem;
+  justify-content: center;
+}
+.singlepage .image img {
+  width: 25rem;
+  height: 25rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.singlepage .data {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

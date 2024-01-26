@@ -1,0 +1,114 @@
+.containerheader {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 2fr 1fr;
+  grid-template-rows: 5rem;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 2rem;
+}
+.cheaderchild1 {
+  grid-column: 1/2;
+}
+.cheaderchild1 h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  margin-left: 2rem;
+  font-family: Playfair Display;
+  line-height: normal;
+  cursor: pointer;
+  color: black;
+}
+
+.cheaderchild2 {
+  grid-column: 2/3;
+}
+.cheaderchild2 ul {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(2, 2, 2);
+  line-height: 2.7rem;
+  font-size: 1rem;
+  vertical-align: baseline;
+  text-transform: capitalize;
+  text-align: left;
+  font-family: Montserrat;
+  margin-top: 1.3rem;
+  margin-left: 2rem;
+}
+.cheaderchild2 ul li {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+.cheaderchild2 a {
+  color: rgb(0, 0, 0);
+  font-weight: 40;
+  text-decoration: none;
+}
+.cheaderchild2 a ::after {
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 0.1rem;
+  width: 0%;
+  background-color: rgb(7, 7, 7);
+  transition: all ease 1s;
+}
+.cheaderchild2 a :hover ::after {
+  width: 100%;
+  position: absolute;
+}
+
+.cheaderchild2 i {
+  display: none;
+}
+.cheaderchild2 a :hover {
+  transform: scale(1);
+}
+.cheaderchild3 {
+  grid-column: 3/4;
+}
+.cheaderchild3 input::placeholder {
+  font-size: 1rem;
+  padding-left: 1rem;
+  border: none;
+  font-family: Montserrat;
+}
+.cheaderchild3 .cartbtn {
+  position: absolute;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #000000;
+  margin-top: 1.2rem;
+  margin-left: 3rem;
+  border: 0.1rem solid gray;
+  font-size: 1rem;
+}
+.cartbtn:hover {
+  background-color: rgba(8, 8, 8, 0.616);
+}
+
+.containerheader .hamburger {
+  background-color: #f5f5f5;
+  border: 0.1rem solid gray;
+  width: 5rem;
+  height: 4rem;
+  margin-top: 5rem;
+  border-radius: 0.5rem;
+  color: rgb(0, 0, 0);
+  display: none;
+}
+.containerheader button {
+  border: none;
+}
+.cheaderchild3 a {
+  color: black;
+  text-decoration: none;
+}

@@ -1,0 +1,136 @@
+.cartcontainer {
+  display: grid;
+  grid-template-columns: 60% 30rem;
+  grid-template-rows: auto;
+}
+.cartcontainer .checkout {
+  background-color: rgba(255, 255, 255, 0.671);
+  width: 20rem;
+  height: 23rem;
+  margin-left: 5rem;
+  padding-left: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: 3rem;
+}
+.checkout h1 {
+  font-size: 1.2;
+  color: black;
+  text-transform: capitalize;
+  font-family: "Montserrat";
+}
+.checkoutbtn {
+  width: 18rem;
+  height: 3rem;
+  background-color: black;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+.cartsection {
+  width: 100%;
+  min-height: calc(100vh - 15rem);
+  overflow-y: auto;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10rem;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  height: 4rem;
+  margin-bottom: 3rem;
+}
+
+th {
+  background-color: #ffffff;
+}
+
+th:first-child,
+td:first-child {
+  width: 10rem;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 18rem;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 12rem;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 12rem;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+  width: 12rem;
+}
+
+th {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+td {
+  margin-top: 0.3rem;
+  height: 4rem;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.img {
+  margin-left: 3rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.incdecbtn button {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.3rem;
+  background-color: rgba(2, 2, 2, 0.973);
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  color: white;
+}
+.continue {
+  margin-left: 10rem;
+}
+.totalprice {
+  width: 12rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  margin-left: 3rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-radius: 1rem;
+  margin-top: 5rem;
+  background-color: #2b2626d7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button.totalprice:hover {
+  background-color: #4e4e4e86;
+}

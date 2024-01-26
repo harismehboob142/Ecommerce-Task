@@ -1,0 +1,13 @@
+.main {
+  width: 100%;
+  height: auto;
+}
+
+.containersinglepage {
+  display: grid;
+  grid-template-columns: 50rem 50rem;
+  grid-template-rows: auto;
+  justify-content: center;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
