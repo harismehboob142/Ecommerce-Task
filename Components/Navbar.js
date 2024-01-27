@@ -2,6 +2,12 @@ import Link from "next/link";
 import { useSelector } from "react-redux";
 const Navbar = () => {
   const items = useSelector((state) => state.cart);
+  const [search,setSearch] = useState("")
+  const handleEnterPress=(e)=>{
+     if(event.key === 'Enter'){
+    localStorage.setItem('query',search)
+  }
+  }
   return (
     <>
       <div className="containerheader">
@@ -51,6 +57,8 @@ const Navbar = () => {
             }}
             type="search"
             placeholder="Search"
+            onChange={(e)=>{setSearch(e.target.value)}}
+            onKeyDown={handleEnterPress}
           />
           <span
             style={{
